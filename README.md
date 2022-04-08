@@ -1,2 +1,3 @@
-# coding-quiz
-Module 4 Challenge: Web APIs
+# Coding Quiz
+
+## Module 4 Challenge: Web APIs
