@@ -1,6 +1,6 @@
 # Coding Quiz
 
-## Module 4 Challenge: Web APIs
+### Module 4 Challenge: Web APIs
 
 ## User Story 
 GIVEN I am taking a code quiz </br>
