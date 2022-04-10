@@ -1,0 +1,24 @@
+
+:root {
+    --nude: #f8edeb;
+    --mint: #d8e2dc;
+    --pink: #f1c0e8;
+}
+
+body {
+    background-color: var(--nude);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header {
+    background-color: var(--pink);
+    width: 100%;
+}
+
+.title {
+    justify-content: center;
+    display: flex;
+}
