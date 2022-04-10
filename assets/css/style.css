@@ -1,8 +1,9 @@
 
 :root {
     --nude: #f8edeb;
-    --mint: #d8e2dc;
+    --ocean: #00b4d8;
     --pink: #f1c0e8;
+    --cream: #FDFAFA;
 }
 
 body {
@@ -11,14 +12,60 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-direction: column;
+}
+
+html, body {
+    height: 100%;
 }
 
 header {
     background-color: var(--pink);
     width: 100%;
+    flex-wrap: wrap;
+}
+
+header div {
+    display: flex;
 }
 
 .title {
     justify-content: center;
+    flex-wrap: wrap;
+    color: var(--cream);
+}
+
+header a {
+    text-decoration: none;
+    color: var(--ocean);
+    margin-bottom: 20px;
+}
+
+.header-content {
     display: flex;
+    justify-content: space-around;
+}
+
+footer {
+    background-color: var(--pink);
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex-shrink: 0;
+}
+
+footer img {
+    max-height: 3em;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--nude);
 }
