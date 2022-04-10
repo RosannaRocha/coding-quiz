@@ -11,9 +11,9 @@ var score = 100;
 startButton.addEventListener('click', startQuiz);
 
 function changeVisibility(element) {
-    if (element.className === "hidden") {
+    if (element.className == "hidden") {
       element.className = "visible";
-    } else if (element.className === "visible") {
+    } else if (element.className == "visible") {
       element.className = "hidden";
     } else {
         alert("Error in changing visibility");
