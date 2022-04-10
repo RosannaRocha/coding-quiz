@@ -4,6 +4,8 @@
     --ocean: #00b4d8;
     --pink: #f1c0e8;
     --cream: #FDFAFA;
+    --coral: #ffcfd2;
+    --teal: #005f73;
 }
 
 body {
@@ -19,6 +21,7 @@ html, body {
     height: 100%;
 }
 
+/* Header Styling */
 header {
     background-color: var(--pink);
     width: 100%;
@@ -38,7 +41,14 @@ header div {
 header a {
     text-decoration: none;
     color: var(--ocean);
-    margin-bottom: 20px;
+}
+
+header a:hover {
+    color: var(--coral);
+}
+
+header p {
+    color: var(--ocean);
 }
 
 .header-content {
@@ -46,15 +56,41 @@ header a {
     justify-content: space-around;
 }
 
+/* Main Styling */
+.main {
+    flex: 1 0 auto;
+    display: flex;
+}
+
+.instructions {
+    color: var(--teal);
+}
+
+.instruction-content {
+    padding: 5em;
+}
+
+.button {
+    background-color: var(--coral);
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    color: var(--cream);
+}
+
+.button:hover {
+    color: var(--teal);
+}
+
+/* Footer Styling */
 footer {
     background-color: var(--pink);
     width: 100%;
     display: flex;
     align-items: center;
-}
-
-.content {
-    flex: 1 0 auto;
 }
 
 .footer {
