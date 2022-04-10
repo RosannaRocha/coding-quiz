@@ -6,6 +6,7 @@
     --cream: #FDFAFA;
     --coral: #ffcfd2;
     --teal: #005f73;
+    --seafoam: #98f5e1;
 }
 
 body {
@@ -41,6 +42,7 @@ header div {
 header a {
     text-decoration: none;
     color: var(--ocean);
+    align-items: center;
 }
 
 header a:hover {
@@ -49,6 +51,7 @@ header a:hover {
 
 header p {
     color: var(--ocean);
+    align-items: center;
 }
 
 .header-content {
@@ -60,17 +63,23 @@ header p {
 .main {
     flex: 1 0 auto;
     display: flex;
-}
-
-.instructions {
     color: var(--teal);
+    justify-content: center;
+    flex-direction: column;
 }
 
 .instruction-content {
     padding: 5em;
+    display: flex;
+    flex-direction: column;
 }
 
-.button {
+.button-box {
+    align-items: center;
+    justify-content: center;
+}
+
+.start-button {
     background-color: var(--coral);
     border: none;
     padding: 15px 32px;
@@ -83,6 +92,41 @@ header p {
 
 .button:hover {
     color: var(--teal);
+}
+
+.questions {
+    color: var(--teal);
+    padding: 5em;
+    display: flex;
+}
+
+.question-content ol li {
+    list-style-type: none;
+}
+
+.question-button {
+    background-color: var(--seafoam);
+    border: none;
+    padding: 2px 4px;
+    margin: 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    color: var(--cream);
+    border-radius: 45%;
+}
+
+.question-button:hover {
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+  
+.visible {
+    display: block;
 }
 
 /* Footer Styling */

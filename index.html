@@ -14,7 +14,7 @@
         </div>
         <p class="header-content">
             <a href="#" class="high-scores">View High Scores</a>
-            Timer
+            <id="timer">Timer: 100</id>
         </p>
     </header>
     <main class="main">
@@ -25,8 +25,24 @@
                 </h2>
                 <p>
                     This is a timed, multiple-choice coding quiz. Incorrect answers will penalize your time (which is also your score) by ten seconds.
+                    <br>
+                    <br>
                 </p>
-                <button class="button">Start Quiz</button>
+                <div class="button-box">
+                    <button class="start-button">Start Quiz</button>
+                </div>
+            </div>
+        </section>
+        <section class="questions">
+            <div class="question-content">
+                <h2>Question 1</h2>
+                <p>What is 1 + 1?</p>
+                <ol>
+                    <li><button class="question-button">a.</button> 0</li>
+                    <li><button class="question-button">b.</button> 1</li>
+                    <li><button class="question-button">c.</button> 2</li>
+                    <li><button class="question-button">d.</button> 3</li>
+                </ol>
             </div>
         </section>
     </main>
@@ -36,5 +52,7 @@
        </a>
        <a href="https://github.com/RosannaRocha">Rosanna's Github</a>
     </footer>
+
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
