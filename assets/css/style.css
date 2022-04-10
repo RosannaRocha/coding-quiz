@@ -6,7 +6,7 @@
     --cream: #FDFAFA;
     --coral: #ffcfd2;
     --teal: #005f73;
-    --seafoam: #98f5e1;
+    --seafoam: #4BEDCA;
 }
 
 body {
@@ -75,7 +75,7 @@ header p {
 }
 
 .button-box {
-    align-items: center;
+    display: flex;
     justify-content: center;
 }
 
@@ -90,18 +90,33 @@ header p {
     color: var(--cream);
 }
 
-.button:hover {
+.start-button:hover {
     color: var(--teal);
+    cursor: pointer;
 }
 
 .questions {
     color: var(--teal);
     padding: 5em;
+}
+
+.question-content {
     display: flex;
+    flex-direction: column;
 }
 
 .question-content ol li {
     list-style-type: none;
+    margin-right: 4em;
+}
+
+.question-box {
+    border: 5px solid var(--seafoam);
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .question-button {
