@@ -53,6 +53,10 @@ header a {
     align-items: center;
 }
 
+.high-scores {
+    margin-top: 14px;
+}
+
 header a:hover {
     color: var(--coral);
 }
@@ -113,6 +117,7 @@ header p {
 .question-content {
     display: flex;
     flex-direction: column;
+    flex: 2;
 }
 
 .question-content ol li {
@@ -140,10 +145,34 @@ header p {
     font-size: 16px;
     color: var(--cream);
     border-radius: 45%;
+
 }
 
 .question-button:hover {
     cursor: pointer;
+}
+
+.submit-button {
+    background-color: var(--coral);
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    color: var(--cream);
+    margin-top: 15px;
+}
+
+.submit-button:hover {
+    cursor: pointer;
+    color: var(--teal);
+}
+
+.end-quiz {
+    justify-content: center;
+    text-align: center;
+    font-size: 2em;
 }
 
 /* Footer Styling */

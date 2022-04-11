@@ -1,12 +1,11 @@
 
 var startButton = document.getElementById("start-button");
-var question1 = document.getElementById("question-1");
-var question2 = document.getElementById("question-2");
-var question3 = document.getElementById("question-3");
-var question4 = document.getElementById("question-4");
+var question = document.getElementById("question");
 var timerEl = document.getElementById("timer");
 var instructions = document.getElementById("instructions");
-var time = 5;
+var endScreen = document.getElementById("end-quiz");
+var finalScore = document.getElementById("final-score");
+var time = 3;
 
 startButton.addEventListener('click', startQuiz);
 
@@ -23,7 +22,7 @@ function changeVisibility(element) {
 function startQuiz() {
 
     changeVisibility(instructions);
-    changeVisibility(question1);
+    changeVisibility(question);
     startTimer();
 }
 
@@ -33,10 +32,17 @@ function startTimer() {
         timerEl.textContent = "Timer: " + time;
         time--;
         if (time === -1) {
+            time = 0;
+            timerEl.textContent = "Timer: " + time;
+            endQuiz();
             clearInterval(timerInterval);
         } 
     }, 1000);
+}
 
-
+function endQuiz() {
+    changeVisibility(question);
+    changeVisibility(endScreen);
+    finalScore.textContent = "Final Score: " + time;
 }
 
