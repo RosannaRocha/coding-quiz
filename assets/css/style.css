@@ -172,8 +172,14 @@ header p {
 .end-quiz {
     justify-content: center;
     text-align: center;
-    font-size: 2em;
 }
+
+input[type=text] {
+    border: 2px solid var(--seafoam);
+    border-radius: 4px;
+    width: 60%;
+    height: 30px;
+  }
 
 /* Footer Styling */
 footer {
