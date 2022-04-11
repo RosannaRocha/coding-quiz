@@ -16,7 +16,7 @@ WHEN the game is over</br>
 THEN I can save my initials and score</br>
 </br>
 ## Deployment Link 
-Insert Here
+https://rosannarocha.github.io/coding-quiz/
 </br>
 ## Preview 
 Insert Here 
