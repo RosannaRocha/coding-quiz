@@ -134,17 +134,21 @@ header p {
     align-items: center;
 }
 
+.question-list li {
+    display: flex;
+}
+
 .question-button {
     background-color: var(--seafoam);
     border: none;
-    padding: 2px 4px;
+    padding: 12px;
     margin: 2px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     color: var(--cream);
-    border-radius: 45%;
+    border-radius: 50%;
 
 }
 
